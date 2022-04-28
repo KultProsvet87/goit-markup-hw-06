@@ -1,5 +1,5 @@
 html {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 *,
@@ -69,8 +69,8 @@ h2 {
 /* classes */
 
 .container {
-    max-width: 1170px;
-    min-width: 1170px;
+    max-width: 1200px;
+    min-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -719,6 +719,19 @@ address {
 .client-comment:focus {
     outline: none;
     border: 1px solid var(--accent-color);
+}
+
+.licence {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.licence-check {
+}
+
+.licence-link {
+    text-decoration: underline;
+    color: var(--accent-color);
 }
 
 .is-hidden {
