@@ -450,9 +450,27 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="footer-form">
+                    <form action="" class="footer-form">
+                        <h3 class="footer-text">Подпишитесь на рассылку</h3>
+                        <div class="footer-form-feald">
+                            <input type="email" name="user-email" id="" class="footer-form-input" placeholder="E-mail" required>
+                            <button type="submit" class="footer-button">
+                                Подписаться
+                                <svg class="icon-send">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Modal Window -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
@@ -467,7 +485,7 @@
 
                 <div class="form-feald">
                     <label for="name" class="input-label">Имя</label>
-                    <input type="text" name="" id="name" class="form-input">
+                    <input type="text" name="" id="name" class="form-input" required>
                     <svg class="input-icon">
                         <use href="./images/icons.svg#form-name-icon"></use>
                     </svg>
@@ -475,7 +493,7 @@
 
                 <div class="form-feald">
                     <label for="phone" class="input-label">Телефон</label>
-                    <input type="tel" name="" id="phone" class="form-input">
+                    <input type="tel" name="" id="phone" class="form-input" required>
                     <svg class="input-icon">
                         <use href="./images/icons.svg#form-phone-icon"></use>
                     </svg>
@@ -483,7 +501,7 @@
 
                 <div class="form-feald">
                     <label for="email" class="input-label">Почта</label>
-                    <input type="email" name="" id="email" class="form-input">
+                    <input type="email" name="" id="email" class="form-input" required>
                     <svg class="input-icon">
                         <use href="./images/icons.svg#form-mail-icon"></use>
                     </svg>
@@ -491,12 +509,18 @@
 
                 <div class="form-feald">
                     <label for="comment" class="input-label">Комментарий</label>
-                    <textarea class="client-comment" name="comment" id="" rows="6" placeholder="Введите текст"></textarea>
+                    <textarea class="client-comment" name="" id="comment"  placeholder="Введите текст"></textarea>
                 </div>
 
                 <div class="licence">
-                    <input type="checkbox" name="" id="licence" class="licence-check">
-                    <label for="licence">Соглашаюсь с рассылкой и принимаю <a href="#" class="licence-link">Условия договора</a></label>
+                    <input type="checkbox" name="" id="licence" class="licence-check" required>
+                    <label for="licence" class="licence-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="licence-link">Условия договора</a></label>
+                    <svg class="checked">
+                        <use href="./images/icons.svg#checked"></use>
+                    </svg>
+                    <svg class="unchecked">
+                        <use href="./images/icons.svg#unchecked"></use>
+                    </svg>
                 </div>
 
                 <button type="submit" class="form-button">Отправить</button>
